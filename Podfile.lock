@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (4.4.0)
+  - ENSwiftSideMenu (0.1.1)
+  - Gloss (1.2.4)
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.2.0):
+    - GoogleMaps (= 2.2.0)
+    - GooglePlaces (= 2.2.0)
+  - GooglePlaces (2.2.0):
+    - GoogleMaps/Base (= 2.2.0)
+  - IQKeyboardManager (4.0.9)
+  - LiquidFloatingActionButton (1.2.0)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ENSwiftSideMenu
+  - Gloss
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - IQKeyboardManager
+  - LiquidFloatingActionButton
+  - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  ENSwiftSideMenu: a934caefbe811e4925f172009349da4a49901307
+  Gloss: 4e036074610fdb993abcb958ebcd7332588e2333
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  GooglePlacePicker: 345b1aabd42c9d6d9bf2369c1bae1234d903e764
+  GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
+  IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
+  LiquidFloatingActionButton: 9c28961915754e08cf596ea6bdd60f9cd949f172
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: bf31a5059e40fff75be1b75a24e9c2ad2dc0fac8
+
+COCOAPODS: 1.2.1

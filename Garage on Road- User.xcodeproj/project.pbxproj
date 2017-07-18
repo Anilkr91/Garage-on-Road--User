@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EC5A4431F1AEB63002747EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A43F1F1AEB63002747EE /* ViewController.swift */; };
+		9EC5A45C1F1AED1B002747EE /* PasswordTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4541F1AED1B002747EE /* PasswordTextViewController.swift */; };
+		9EC5A45D1F1AED1B002747EE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4551F1AED1B002747EE /* ProfileTableViewController.swift */; };
+		9EC5A45E1F1AED1B002747EE /* SideBarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4561F1AED1B002747EE /* SideBarHeaderView.swift */; };
+		9EC5A45F1F1AED1B002747EE /* SideBarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EC5A4571F1AED1B002747EE /* SideBarHeaderView.xib */; };
+		9EC5A4601F1AED1B002747EE /* SideBarHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4581F1AED1B002747EE /* SideBarHeaderViewController.swift */; };
+		9EC5A4611F1AED1B002747EE /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4591F1AED1B002747EE /* SideMenu.swift */; };
+		9EC5A4621F1AED1B002747EE /* SideMenuOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A45A1F1AED1B002747EE /* SideMenuOptionsTableViewController.swift */; };
+		9EC5A4631F1AED1B002747EE /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A45B1F1AED1B002747EE /* SideMenuViewController.swift */; };
+		9EC5A4651F1AED3E002747EE /* FABUtils+FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4641F1AED3E002747EE /* FABUtils+FloatingActionButton.swift */; };
+		9EC5A4671F1AED48002747EE /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4661F1AED48002747EE /* SideMenuTableViewCell.swift */; };
+		9EC5A4691F1AF4B0002747EE /* UINavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4681F1AF4B0002747EE /* UINavigationItem+Extension.swift */; };
+		9EC5A46B1F1AFF83002747EE /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A46A1F1AFF83002747EE /* AppConstants.swift */; };
+		9EC5A46E1F1B0F3D002747EE /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A46C1F1B0F3D002747EE /* PageContentViewController.swift */; };
+		9EC5A46F1F1B0F3D002747EE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A46D1F1B0F3D002747EE /* SecondViewController.swift */; };
+		9EC5A4711F1BEAD9002747EE /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4701F1BEAD9002747EE /* LoginTableViewController.swift */; };
+		9EC5A4731F1C951D002747EE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4721F1C951D002747EE /* RegisterViewController.swift */; };
+		9EC5A4751F1C9531002747EE /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4741F1C9531002747EE /* VerifyViewController.swift */; };
+		9EC5A4771F1C977C002747EE /* ReferralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4761F1C977C002747EE /* ReferralViewController.swift */; };
+		9EC5A47B1F1C9F9E002747EE /* GRLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A47A1F1C9F9E002747EE /* GRLogin.swift */; };
+		9EC5A4801F1CBB75002747EE /* LoginService+POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A47F1F1CBB75002747EE /* LoginService+POST.swift */; };
+		9EC5A4821F1CBC09002747EE /* UserDefaults+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4811F1CBC09002747EE /* UserDefaults+Helper.swift */; };
+		9EC5A4841F1CCD40002747EE /* GRUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4831F1CCD40002747EE /* GRUser.swift */; };
+		9EC5A4861F1CED7E002747EE /* GRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4851F1CED7E002747EE /* GRError.swift */; };
+		9EC5A4881F1CF452002747EE /* AlertView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4871F1CF452002747EE /* AlertView+Helper.swift */; };
+		9EC5A48A1F1D4253002747EE /* ForgotPassword+POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4891F1D4253002747EE /* ForgotPassword+POST.swift */; };
+		9EC5A48C1F1DD744002747EE /* GRSucess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A48B1F1DD744002747EE /* GRSucess.swift */; };
+		9EC5A48E1F1DDC76002747EE /* GRForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A48D1F1DDC76002747EE /* GRForgotPassword.swift */; };
+		9EDF281B1F1AE47500BFB1EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDF281A1F1AE47500BFB1EC /* AppDelegate.swift */; };
+		9EDF28201F1AE47500BFB1EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EDF281E1F1AE47500BFB1EC /* Main.storyboard */; };
+		9EDF28221F1AE47500BFB1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDF28211F1AE47500BFB1EC /* Assets.xcassets */; };
+		9EDF28251F1AE47500BFB1EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EDF28231F1AE47500BFB1EC /* LaunchScreen.storyboard */; };
+		CE80AC31561272718A117443 /* Pods_Garage_on_Road__User.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D202D03061798976A3749748 /* Pods_Garage_on_Road__User.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		771846B809CA2541BDE4CC63 /* Pods-Garage on Road- User.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garage on Road- User.release.xcconfig"; path = "Pods/Target Support Files/Pods-Garage on Road- User/Pods-Garage on Road- User.release.xcconfig"; sourceTree = "<group>"; };
+		9EC5A43F1F1AEB63002747EE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EC5A4541F1AED1B002747EE /* PasswordTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextViewController.swift; sourceTree = "<group>"; };
+		9EC5A4551F1AED1B002747EE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		9EC5A4561F1AED1B002747EE /* SideBarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarHeaderView.swift; sourceTree = "<group>"; };
+		9EC5A4571F1AED1B002747EE /* SideBarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideBarHeaderView.xib; sourceTree = "<group>"; };
+		9EC5A4581F1AED1B002747EE /* SideBarHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarHeaderViewController.swift; sourceTree = "<group>"; };
+		9EC5A4591F1AED1B002747EE /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		9EC5A45A1F1AED1B002747EE /* SideMenuOptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuOptionsTableViewController.swift; sourceTree = "<group>"; };
+		9EC5A45B1F1AED1B002747EE /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		9EC5A4641F1AED3E002747EE /* FABUtils+FloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FABUtils+FloatingActionButton.swift"; sourceTree = "<group>"; };
+		9EC5A4661F1AED48002747EE /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		9EC5A4681F1AF4B0002747EE /* UINavigationItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extension.swift"; sourceTree = "<group>"; };
+		9EC5A46A1F1AFF83002747EE /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		9EC5A46C1F1B0F3D002747EE /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		9EC5A46D1F1B0F3D002747EE /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9EC5A4701F1BEAD9002747EE /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		9EC5A4721F1C951D002747EE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9EC5A4741F1C9531002747EE /* VerifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
+		9EC5A4761F1C977C002747EE /* ReferralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralViewController.swift; sourceTree = "<group>"; };
+		9EC5A47A1F1C9F9E002747EE /* GRLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRLogin.swift; sourceTree = "<group>"; };
+		9EC5A47F1F1CBB75002747EE /* LoginService+POST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginService+POST.swift"; sourceTree = "<group>"; };
+		9EC5A4811F1CBC09002747EE /* UserDefaults+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Helper.swift"; sourceTree = "<group>"; };
+		9EC5A4831F1CCD40002747EE /* GRUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRUser.swift; sourceTree = "<group>"; };
+		9EC5A4851F1CED7E002747EE /* GRError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRError.swift; sourceTree = "<group>"; };
+		9EC5A4871F1CF452002747EE /* AlertView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertView+Helper.swift"; sourceTree = "<group>"; };
+		9EC5A4891F1D4253002747EE /* ForgotPassword+POST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ForgotPassword+POST.swift"; sourceTree = "<group>"; };
+		9EC5A48B1F1DD744002747EE /* GRSucess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRSucess.swift; sourceTree = "<group>"; };
+		9EC5A48D1F1DDC76002747EE /* GRForgotPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRForgotPassword.swift; sourceTree = "<group>"; };
+		9EDF28171F1AE47500BFB1EC /* Garage on Road- User.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Garage on Road- User.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EDF281A1F1AE47500BFB1EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EDF281F1F1AE47500BFB1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EDF28211F1AE47500BFB1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EDF28241F1AE47500BFB1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EDF28261F1AE47500BFB1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D202D03061798976A3749748 /* Pods_Garage_on_Road__User.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Garage_on_Road__User.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20DE1A277B505734F8B6E69 /* Pods-Garage on Road- User.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garage on Road- User.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Garage on Road- User/Pods-Garage on Road- User.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EDF28141F1AE47500BFB1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE80AC31561272718A117443 /* Pods_Garage_on_Road__User.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		429530F06310C8A7F6487D52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D20DE1A277B505734F8B6E69 /* Pods-Garage on Road- User.debug.xcconfig */,
+				771846B809CA2541BDE4CC63 /* Pods-Garage on Road- User.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EC5A43E1F1AEB63002747EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EC5A46C1F1B0F3D002747EE /* PageContentViewController.swift */,
+				9EC5A46D1F1B0F3D002747EE /* SecondViewController.swift */,
+				9EC5A4541F1AED1B002747EE /* PasswordTextViewController.swift */,
+				9EC5A4551F1AED1B002747EE /* ProfileTableViewController.swift */,
+				9EC5A4561F1AED1B002747EE /* SideBarHeaderView.swift */,
+				9EC5A4571F1AED1B002747EE /* SideBarHeaderView.xib */,
+				9EC5A4581F1AED1B002747EE /* SideBarHeaderViewController.swift */,
+				9EC5A4591F1AED1B002747EE /* SideMenu.swift */,
+				9EC5A45A1F1AED1B002747EE /* SideMenuOptionsTableViewController.swift */,
+				9EC5A45B1F1AED1B002747EE /* SideMenuViewController.swift */,
+				9EC5A43F1F1AEB63002747EE /* ViewController.swift */,
+				9EC5A4701F1BEAD9002747EE /* LoginTableViewController.swift */,
+				9EC5A4721F1C951D002747EE /* RegisterViewController.swift */,
+				9EC5A4741F1C9531002747EE /* VerifyViewController.swift */,
+				9EC5A4761F1C977C002747EE /* ReferralViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9EC5A4401F1AEB63002747EE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9EC5A4641F1AED3E002747EE /* FABUtils+FloatingActionButton.swift */,
+				9EC5A4681F1AF4B0002747EE /* UINavigationItem+Extension.swift */,
+				9EC5A46A1F1AFF83002747EE /* AppConstants.swift */,
+				9EC5A4811F1CBC09002747EE /* UserDefaults+Helper.swift */,
+				9EC5A4871F1CF452002747EE /* AlertView+Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9EC5A4411F1AEB63002747EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EC5A47A1F1C9F9E002747EE /* GRLogin.swift */,
+				9EC5A4831F1CCD40002747EE /* GRUser.swift */,
+				9EC5A4851F1CED7E002747EE /* GRError.swift */,
+				9EC5A48B1F1DD744002747EE /* GRSucess.swift */,
+				9EC5A48D1F1DDC76002747EE /* GRForgotPassword.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EC5A4421F1AEB63002747EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EC5A4661F1AED48002747EE /* SideMenuTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EC5A47E1F1CBB45002747EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9EC5A47F1F1CBB75002747EE /* LoginService+POST.swift */,
+				9EC5A4891F1D4253002747EE /* ForgotPassword+POST.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9EDF280E1F1AE47400BFB1EC = {
+			isa = PBXGroup;
+			children = (
+				9EDF28191F1AE47500BFB1EC /* Garage on Road- User */,
+				9EDF28181F1AE47500BFB1EC /* Products */,
+				429530F06310C8A7F6487D52 /* Pods */,
+				C7E6C724A074C2EC3D8307AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9EDF28181F1AE47500BFB1EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EDF28171F1AE47500BFB1EC /* Garage on Road- User.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EDF28191F1AE47500BFB1EC /* Garage on Road- User */ = {
+			isa = PBXGroup;
+			children = (
+				9EC5A47E1F1CBB45002747EE /* Services */,
+				9EC5A43E1F1AEB63002747EE /* Controller */,
+				9EC5A4401F1AEB63002747EE /* Helper */,
+				9EC5A4411F1AEB63002747EE /* Model */,
+				9EC5A4421F1AEB63002747EE /* View */,
+				9EDF281A1F1AE47500BFB1EC /* AppDelegate.swift */,
+				9EDF281E1F1AE47500BFB1EC /* Main.storyboard */,
+				9EDF28211F1AE47500BFB1EC /* Assets.xcassets */,
+				9EDF28231F1AE47500BFB1EC /* LaunchScreen.storyboard */,
+				9EDF28261F1AE47500BFB1EC /* Info.plist */,
+			);
+			path = "Garage on Road- User";
+			sourceTree = "<group>";
+		};
+		C7E6C724A074C2EC3D8307AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D202D03061798976A3749748 /* Pods_Garage_on_Road__User.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EDF28161F1AE47500BFB1EC /* Garage on Road- User */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EDF28291F1AE47500BFB1EC /* Build configuration list for PBXNativeTarget "Garage on Road- User" */;
+			buildPhases = (
+				86F5B52944A3FBE3CA67515E /* [CP] Check Pods Manifest.lock */,
+				9EDF28131F1AE47500BFB1EC /* Sources */,
+				9EDF28141F1AE47500BFB1EC /* Frameworks */,
+				9EDF28151F1AE47500BFB1EC /* Resources */,
+				97E2A16D62AF7328861A35EB /* [CP] Embed Pods Frameworks */,
+				5F6BF5399C5FF810783025FB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Garage on Road- User";
+			productName = "Garage on Road- User";
+			productReference = 9EDF28171F1AE47500BFB1EC /* Garage on Road- User.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EDF280F1F1AE47400BFB1EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Anil Kumar";
+				TargetAttributes = {
+					9EDF28161F1AE47500BFB1EC = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9EDF28121F1AE47400BFB1EC /* Build configuration list for PBXProject "Garage on Road- User" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EDF280E1F1AE47400BFB1EC;
+			productRefGroup = 9EDF28181F1AE47500BFB1EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EDF28161F1AE47500BFB1EC /* Garage on Road- User */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EDF28151F1AE47500BFB1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EC5A45F1F1AED1B002747EE /* SideBarHeaderView.xib in Resources */,
+				9EDF28251F1AE47500BFB1EC /* LaunchScreen.storyboard in Resources */,
+				9EDF28221F1AE47500BFB1EC /* Assets.xcassets in Resources */,
+				9EDF28201F1AE47500BFB1EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F6BF5399C5FF810783025FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Garage on Road- User/Pods-Garage on Road- User-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86F5B52944A3FBE3CA67515E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97E2A16D62AF7328861A35EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Garage on Road- User/Pods-Garage on Road- User-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EDF28131F1AE47500BFB1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EC5A4621F1AED1B002747EE /* SideMenuOptionsTableViewController.swift in Sources */,
+				9EC5A4651F1AED3E002747EE /* FABUtils+FloatingActionButton.swift in Sources */,
+				9EC5A4431F1AEB63002747EE /* ViewController.swift in Sources */,
+				9EC5A46F1F1B0F3D002747EE /* SecondViewController.swift in Sources */,
+				9EC5A4771F1C977C002747EE /* ReferralViewController.swift in Sources */,
+				9EC5A46E1F1B0F3D002747EE /* PageContentViewController.swift in Sources */,
+				9EDF281B1F1AE47500BFB1EC /* AppDelegate.swift in Sources */,
+				9EC5A4601F1AED1B002747EE /* SideBarHeaderViewController.swift in Sources */,
+				9EC5A4821F1CBC09002747EE /* UserDefaults+Helper.swift in Sources */,
+				9EC5A4691F1AF4B0002747EE /* UINavigationItem+Extension.swift in Sources */,
+				9EC5A48C1F1DD744002747EE /* GRSucess.swift in Sources */,
+				9EC5A4841F1CCD40002747EE /* GRUser.swift in Sources */,
+				9EC5A4861F1CED7E002747EE /* GRError.swift in Sources */,
+				9EC5A4611F1AED1B002747EE /* SideMenu.swift in Sources */,
+				9EC5A47B1F1C9F9E002747EE /* GRLogin.swift in Sources */,
+				9EC5A4751F1C9531002747EE /* VerifyViewController.swift in Sources */,
+				9EC5A48A1F1D4253002747EE /* ForgotPassword+POST.swift in Sources */,
+				9EC5A4711F1BEAD9002747EE /* LoginTableViewController.swift in Sources */,
+				9EC5A45E1F1AED1B002747EE /* SideBarHeaderView.swift in Sources */,
+				9EC5A45D1F1AED1B002747EE /* ProfileTableViewController.swift in Sources */,
+				9EC5A4801F1CBB75002747EE /* LoginService+POST.swift in Sources */,
+				9EC5A4631F1AED1B002747EE /* SideMenuViewController.swift in Sources */,
+				9EC5A4731F1C951D002747EE /* RegisterViewController.swift in Sources */,
+				9EC5A46B1F1AFF83002747EE /* AppConstants.swift in Sources */,
+				9EC5A4671F1AED48002747EE /* SideMenuTableViewCell.swift in Sources */,
+				9EC5A4881F1CF452002747EE /* AlertView+Helper.swift in Sources */,
+				9EC5A48E1F1DDC76002747EE /* GRForgotPassword.swift in Sources */,
+				9EC5A45C1F1AED1B002747EE /* PasswordTextViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9EDF281E1F1AE47500BFB1EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EDF281F1F1AE47500BFB1EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9EDF28231F1AE47500BFB1EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EDF28241F1AE47500BFB1EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EDF28271F1AE47500BFB1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EDF28281F1AE47500BFB1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EDF282A1F1AE47500BFB1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D20DE1A277B505734F8B6E69 /* Pods-Garage on Road- User.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Garage on Road- User/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Pronto.Garage-on-Road--User";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9EDF282B1F1AE47500BFB1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 771846B809CA2541BDE4CC63 /* Pods-Garage on Road- User.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Garage on Road- User/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Pronto.Garage-on-Road--User";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EDF28121F1AE47400BFB1EC /* Build configuration list for PBXProject "Garage on Road- User" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EDF28271F1AE47500BFB1EC /* Debug */,
+				9EDF28281F1AE47500BFB1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EDF28291F1AE47500BFB1EC /* Build configuration list for PBXNativeTarget "Garage on Road- User" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EDF282A1F1AE47500BFB1EC /* Debug */,
+				9EDF282B1F1AE47500BFB1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EDF280F1F1AE47400BFB1EC /* Project object */;
+}
