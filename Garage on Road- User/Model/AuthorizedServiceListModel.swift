@@ -7,7 +7,7 @@
 //
 
 import Gloss
-struct AuthorizedServiceListModel {
+struct AuthorizedServiceListModel: Decodable {
     
     let id: Int
     let name: String

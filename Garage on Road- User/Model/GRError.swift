@@ -16,6 +16,7 @@ struct GRError {
     // MARK: - Deserialization
     
     init?(json: JSON) {
+        print(json)
         guard let success: Bool = "success" <~~ json,
             let error: String = "error" <~~ json,
             let error_code: Int = "error_code" <~~ json else { return nil }

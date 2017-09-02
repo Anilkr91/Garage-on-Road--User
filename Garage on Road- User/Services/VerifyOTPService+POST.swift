@@ -24,7 +24,6 @@ class VerifyOTPPostService {
                     let error = GRError(json: data as! JSON)
                     Alert.showAlertWithError(title: "Error", message: error!.error)
                 } else {
-                    print(data)
                     completionHandler(user!)
                 }
                 

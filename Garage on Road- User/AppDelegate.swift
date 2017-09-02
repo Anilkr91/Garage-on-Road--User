@@ -53,11 +53,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    //    func setHomeUserAsRVC() {
-    //        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-    //        let vc = storyboard.instantiateViewController(withIdentifier: "HomeNavigationController")
-    //        window?.rootViewController = vc
-    //    }
+        func setHomeUserAsRVC() {
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let vc = storyboard.instantiateViewController(withIdentifier: "HomeNavigationController")
+            window?.rootViewController = vc
+        }
     
     
 }

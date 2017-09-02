@@ -24,5 +24,5 @@ struct ServiceListArray {
         return jsonify([
             "services" ~~> self.results
             ])
-}
+    }
 }

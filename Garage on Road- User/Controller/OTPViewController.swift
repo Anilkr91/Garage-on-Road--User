@@ -11,11 +11,11 @@ import UIKit
 class OTPViewController: UIViewController {
     
     @IBOutlet weak var mobileTextfield: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        generateOTP()
     }
     
     override func didReceiveMemoryWarning() {
@@ -23,18 +23,27 @@ class OTPViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func nextButtonTapped(_ sender: Any) {
+        
+        let phoneNumber = mobileTextfield.text!
+        if phoneNumber.removeAllSpaces().isEmpty {
+            Alert.showAlertWithError(title: "Error", message: "phoneNumber is empty")
+        
+        } else {
+            generateOTP()
+        }
+    }
+    
     func generateOTP() {
         let param = GROTP(phone: mobileTextfield.text!).toJSON()
         GenerateOTPPostService.userlogin(params: param! as [String : AnyObject]) { (otp) in
             print(otp)
-            self.performSegue(withIdentifier: "VerifyOTPSegue", sender: self)
+            self.performSegue(withIdentifier: "showOTPSegue", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "VerifyOTPSegue" {
-            
+        if segue.identifier == "showOTPSegue" {
             let dvc = segue.destination as! VerifyViewController
             dvc.mobile = mobileTextfield.text
         }

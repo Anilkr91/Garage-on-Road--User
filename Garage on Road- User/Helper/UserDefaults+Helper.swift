@@ -6,19 +6,24 @@
 //  Copyright © 2017 Anil Kumar. All rights reserved.
 //
 
-import UIKit
 
+/*
+import UIKit
 class Default {
     
-    static func setObject(value:AnyObject ,key:String) {
+    static func getCurrentUser() -> GRUser {
         let pref = UserDefaults.standard
-        pref.set(value, forKey: key)
+        let id = pref.object(forKey: "id") as? String
+        let token = pref.object(forKey: "token") as? String
+        
+        let user = GRUser
+        return user
+    }
+    
+    static func setCurrentUser(user: GRUser) {
+        let pref = UserDefaults.standard
+        pref.set(user._id, forKey: "id")
+        pref.set(user.token, forKey: "token")
         pref.synchronize()
-    }
-    
-    static  func getObject(key:String) -> AnyObject {
-        let pref = UserDefaults.standard
-        return pref.object(forKey: key)! as AnyObject
-    }
-    
 }
+}*/

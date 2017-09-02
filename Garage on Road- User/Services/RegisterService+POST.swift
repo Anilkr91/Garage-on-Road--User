@@ -11,7 +11,7 @@ import Gloss
 
 class RegisterPostService {
     
-    static func userlogin (params:[String: AnyObject] , completionHandler: @escaping (GRUser) -> Void) {
+    static func userlogin (params:[String: AnyObject] , completionHandler: @escaping (GRegisterModel) -> Void) {
         
         //        let header: HTTPHeaders = ["Authorization" : "Buddy \(Default.getObject(key: "AuthAccessToken"))"]
         let URL = Constants.BASE_URL
@@ -19,9 +19,10 @@ class RegisterPostService {
             
             switch response.result {
             case .success(let data):
-                let user = GRUser(json: data as! JSON)
+                let user = GRegisterModel(json: data as! JSON)
                 if user?.device_token == nil {
                     let error = GRError(json: data as! JSON)
+                    print(error)
                     Alert.showAlertWithError(title: "Error", message: error!.error)
                 } else {
                     print(data)

@@ -42,9 +42,11 @@ class LoginTableViewController: UITableViewController {
         let passwordNumber = passwordTextField.text!
        
         if phoneNumber.removeAllSpaces().isEmpty {
-            print("phoneNumber is empty")
+            Alert.showAlertWithError(title: "Error", message: "PhoneNumber is empty")
+            
         } else if passwordNumber.removeAllSpaces().isEmpty {
-           print("passwordNumber is empty")
+            Alert.showAlertWithError(title: "Error", message: "Password is empty")
+        
         } else {
             let parameters = GRLoginModel(mobile: "8130703672", password: "myself90", device_token: "2y10e1DmYckhBD6bwfO9S4gVO6sJiNGRAqt3IpRjL5LL9VgMIlDCUhee", login_by: "manual").toJSON()
             loginUserService(params: parameters! as [String : AnyObject])
@@ -66,7 +68,9 @@ extension LoginTableViewController {
     func loginUserService(params: [String : AnyObject]) {
         LoginPostService.userlogin(params: params, completionHandler: { (response) in
             print(response)
-            self.gotoHome()
+            let application = UIApplication.shared.delegate as! AppDelegate
+            application.setHomeUserAsRVC()
+            //self.gotoHome()
         })
     }
     func gotoHome() {

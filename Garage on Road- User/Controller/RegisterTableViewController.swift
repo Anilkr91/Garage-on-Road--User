@@ -16,11 +16,16 @@ class RegisterTableViewController: UITableViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmpasswordTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
+    var mobile: String?
     var isShowPassword : Bool!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let mobile = mobile {
+            phoneTextField.text = mobile
+        }
         self.isShowPassword = true
     }
     
@@ -42,38 +47,58 @@ class RegisterTableViewController: UITableViewController {
     
     @IBAction func loginTapped(_ sender: Any) {
         
-        //        let phoneNumber = phoneTextField.text!
-        //        let passwordNumber = passwordTextField.text!
-        //
-        //        if phoneNumber.removeAllSpaces().isEmpty {
-        //            print("phoneNumber is empty")
-        //        } else if passwordNumber.removeAllSpaces().isEmpty {
-        //            print("passwordNumber is empty")
-        //        } else {
-        //            let parameters = GRLoginModel(mobile: "8130703672", password: "myself90", device_token: "2y10e1DmYckhBD6bwfO9S4gVO6sJiNGRAqt3IpRjL5LL9VgMIlDCUhee", login_by: "manual").toJSON()
-        //            loginUserService(params: parameters! as [String : AnyObject])
-        //        }
+        print("login Tapped")
+        
+        self.navigationController?.popToRootViewController(animated: true)
+        
+        
     }
     
     @IBAction func createAccountTapped(_ sender: Any) {
         print("create Tapped")
-    }
-    
-    
-    @IBAction func forgotPasswordTapped(_ sender: Any) {
-        Alert.showAlertWithAction(title: Constants.RESET_PASSWORD, message: Constants.RESET_PASSWORD_MESSAGE)
+        
+        let name = nameTextField.text!
+        let email = emailTextField.text!
+        let phoneNumber = phoneTextField.text!
+        let passwordNumber = passwordTextField.text!
+        let confirmpassword = confirmpasswordTextField.text!
+        let address = addressTextField.text!
+        
+        if name.removeAllSpaces().isEmpty {
+            Alert.showAlertWithError(title: "Error", message: "Name cannot be empty")
+            
+        } else if email.removeAllSpaces().isEmpty {
+            Alert.showAlertWithError(title: "Error", message: "Email cannot be empty")
+            
+        }else if phoneNumber.removeAllSpaces().isEmpty {
+            Alert.showAlertWithError(title: "Error", message: "Phone cannot be empty")
+            
+        } else if passwordNumber.removeAllSpaces().isEmpty {
+            Alert.showAlertWithError(title: "Error", message: "Password cannot be empty")
+            
+        } else if confirmpassword.removeAllSpaces().isEmpty {
+            Alert.showAlertWithError(title: "Error", message: "Confirm Password cannot be empty")
+            
+        } else if address.removeAllSpaces().isEmpty {
+            Alert.showAlertWithError(title: "Error", message: "Address cannot be empty")
+            
+        } else {
+            let parameters = GRRegister(name: name, email: email, address: address, phone: phoneNumber, login_by: "manual", device_type: "iOS", password: passwordNumber, device_token: "2y10e1DmYckhBD6bwfO9S4gVO6sJiNGRAqt3IpRjL5LL9VgMIlDCUhee").toJSON()
+            registerUserService(params: parameters! as [String : AnyObject])
+        }
     }
 }
 
 extension RegisterTableViewController {
     
-    func loginUserService(params: [String : AnyObject]) {
-        LoginPostService.userlogin(params: params, completionHandler: { (response) in
+    func registerUserService(params: [String : AnyObject]) {
+        RegisterPostService.userlogin(params: params, completionHandler: { (response) in
             print(response)
-            self.gotoHome()
+            self.gotoReferral()
         })
     }
-    func gotoHome() {
-        performSegue(withIdentifier: "showHomeSegue", sender: self)
+    
+    func gotoReferral() {
+        performSegue(withIdentifier: "showreferralsegue", sender: self)
     }
 }

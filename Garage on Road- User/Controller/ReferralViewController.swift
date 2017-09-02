@@ -20,16 +20,19 @@ class ReferralViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func skipButtonTapped(_ sender: Any) {
+        
+        performSegue(withIdentifier: "", sender: self)
     }
-    */
+    
+    
+    @IBAction func submitButtonTapped(_ sender: Any) {
 
+        let param = GRReferral(id: "", token: "", referral_code: "", is_skip: "").toJSON()
+        
+        ReferralPostService.userlogin(params: param as! [String : AnyObject]) { (data) in
+            print(data)
+        }
+    }
 }
