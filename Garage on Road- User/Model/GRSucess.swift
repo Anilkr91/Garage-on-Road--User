@@ -7,7 +7,6 @@
 //
 
 import Gloss
-
 struct GRSucess {
     
     let success: Bool

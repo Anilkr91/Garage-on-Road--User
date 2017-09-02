@@ -7,7 +7,6 @@
 //
 
 import Gloss
-
 struct GRForgotPassword {
     
     let mobile: String
