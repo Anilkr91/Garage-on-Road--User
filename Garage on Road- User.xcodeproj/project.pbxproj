@@ -13,6 +13,7 @@
 		8440990D1F5A9FC6005BAC61 /* ReferralService+POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440990C1F5A9FC6005BAC61 /* ReferralService+POST.swift */; };
 		8440990F1F5AA0A7005BAC61 /* ServiceListService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440990E1F5AA0A7005BAC61 /* ServiceListService+GET.swift */; };
 		844099111F5AA0DE005BAC61 /* AuthorizedServiceListService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844099101F5AA0DE005BAC61 /* AuthorizedServiceListService+GET.swift */; };
+		844099131F5AA496005BAC61 /* GROTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844099121F5AA496005BAC61 /* GROTPModel.swift */; };
 		9EC5A4431F1AEB63002747EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A43F1F1AEB63002747EE /* ViewController.swift */; };
 		9EC5A45C1F1AED1B002747EE /* PasswordTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4541F1AED1B002747EE /* PasswordTextViewController.swift */; };
 		9EC5A45D1F1AED1B002747EE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4551F1AED1B002747EE /* ProfileTableViewController.swift */; };
@@ -56,6 +57,7 @@
 		8440990C1F5A9FC6005BAC61 /* ReferralService+POST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReferralService+POST.swift"; sourceTree = "<group>"; };
 		8440990E1F5AA0A7005BAC61 /* ServiceListService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceListService+GET.swift"; sourceTree = "<group>"; };
 		844099101F5AA0DE005BAC61 /* AuthorizedServiceListService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AuthorizedServiceListService+GET.swift"; sourceTree = "<group>"; };
+		844099121F5AA496005BAC61 /* GROTPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GROTPModel.swift; sourceTree = "<group>"; };
 		9EC5A43F1F1AEB63002747EE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9EC5A4541F1AED1B002747EE /* PasswordTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextViewController.swift; sourceTree = "<group>"; };
 		9EC5A4551F1AED1B002747EE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				9EC5A4851F1CED7E002747EE /* GRError.swift */,
 				9EC5A48B1F1DD744002747EE /* GRSucess.swift */,
 				9EC5A48D1F1DDC76002747EE /* GRForgotPassword.swift */,
+				844099121F5AA496005BAC61 /* GROTPModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				844099111F5AA0DE005BAC61 /* AuthorizedServiceListService+GET.swift in Sources */,
 				9EC5A4601F1AED1B002747EE /* SideBarHeaderViewController.swift in Sources */,
 				8440990D1F5A9FC6005BAC61 /* ReferralService+POST.swift in Sources */,
+				844099131F5AA496005BAC61 /* GROTPModel.swift in Sources */,
 				9EC5A4821F1CBC09002747EE /* UserDefaults+Helper.swift in Sources */,
 				9EC5A4691F1AF4B0002747EE /* UINavigationItem+Extension.swift in Sources */,
 				9EC5A48C1F1DD744002747EE /* GRSucess.swift in Sources */,
