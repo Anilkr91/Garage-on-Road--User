@@ -15,7 +15,7 @@ class ForgotPasswordPostService {
         
         //        let header: HTTPHeaders = ["Authorization" : "Buddy \(Default.getObject(key: "AuthAccessToken"))"]
         let URL = Constants.BASE_URL
-        let request = Alamofire.request( URL + "/application/forgot-password", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
+        let request = Alamofire.request( URL + "application/forgot-password", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
             
             switch response.result {
             

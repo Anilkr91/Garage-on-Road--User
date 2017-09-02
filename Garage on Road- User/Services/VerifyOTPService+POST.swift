@@ -1,21 +1,21 @@
 //
-//  LoginService+POST.swift
+//  VerifyOTPService+POST.swift
 //  Garage on Road- User
 //
-//  Created by Anil Kumar on 7/17/17.
+//  Created by admin on 02/09/17.
 //  Copyright © 2017 Anil Kumar. All rights reserved.
 //
 
 import Alamofire
 import Gloss
 
-class LoginPostService {
+class VerifyOTPPostService {
     
     static func userlogin (params:[String: AnyObject] , completionHandler: @escaping (GRUser) -> Void) {
         
         //        let header: HTTPHeaders = ["Authorization" : "Buddy \(Default.getObject(key: "AuthAccessToken"))"]
         let URL = Constants.BASE_URL
-        let request = Alamofire.request( URL + "user/login", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
+        let request = Alamofire.request( URL + "user/otpvarify", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
             
             switch response.result {
             case .success(let data):

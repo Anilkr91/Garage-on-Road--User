@@ -12,5 +12,5 @@ struct Constants {
     static let RESET_PASSWORD_MESSAGE = "Enter Mobile No."
     static let RESET = "Reset"
     static let CANCEL = "Cancel"
-    static let BASE_URL = "http://www.maintenancebazaar.com/garage/public"
+    static let BASE_URL = "http://www.maintenancebazaar.com/garage/public/"
 }

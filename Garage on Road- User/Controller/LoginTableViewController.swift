@@ -46,8 +46,8 @@ class LoginTableViewController: UITableViewController {
         } else if passwordNumber.removeAllSpaces().isEmpty {
            print("passwordNumber is empty")
         } else {
-            let parameters = GRLoginModel(mobile: "9968365956", password: "323936", device_token: "2y10e1DmYckhBD6bwfO9S4gVO6sJiNGRAqt3IpRjL5LL9VgMIlDCUhee", login_by: "manual").toJSON()
-            loginUserService(params: parameters as! [String : AnyObject])
+            let parameters = GRLoginModel(mobile: "8130703672", password: "myself90", device_token: "2y10e1DmYckhBD6bwfO9S4gVO6sJiNGRAqt3IpRjL5LL9VgMIlDCUhee", login_by: "manual").toJSON()
+            loginUserService(params: parameters! as [String : AnyObject])
         }
     }
     
