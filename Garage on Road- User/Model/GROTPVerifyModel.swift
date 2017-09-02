@@ -1,5 +1,5 @@
 //
-//  GROTPModel.swift
+//  GROTPVerifyModel.swift
 //  Garage on Road- User
 //
 //  Created by admin on 02/09/17.
@@ -7,23 +7,23 @@
 //
 
 import Gloss
-struct GROTPModel {
+struct GROTPVerifyModel {
     
     let success: Bool
-    let phone: String
+    let mobile: String
     
     
     init?(json: JSON) {
         guard let success: Bool = "success" <~~ json,
-            let phone: String = "phone" <~~ json else { return nil }
+            let mobile: String = "mobile" <~~ json else { return nil }
         
         self.success = success
-        self.phone = phone
+        self.mobile = mobile
     }
     
     func toJSON() -> JSON? {
         return jsonify([
-            "phone" ~~> self.phone,
+            "mobile" ~~> self.mobile,
             "success" ~~> self.success
             ])
     }

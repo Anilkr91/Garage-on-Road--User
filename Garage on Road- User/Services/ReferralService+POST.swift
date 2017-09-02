@@ -9,7 +9,7 @@
 import Alamofire
 import Gloss
 
-class RegisterPostService {
+class ReferralPostService {
     
     static func userlogin (params:[String: AnyObject] , completionHandler: @escaping (GRUser) -> Void) {
         

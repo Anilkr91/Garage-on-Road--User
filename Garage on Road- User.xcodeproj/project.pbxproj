@@ -14,6 +14,16 @@
 		8440990F1F5AA0A7005BAC61 /* ServiceListService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440990E1F5AA0A7005BAC61 /* ServiceListService+GET.swift */; };
 		844099111F5AA0DE005BAC61 /* AuthorizedServiceListService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844099101F5AA0DE005BAC61 /* AuthorizedServiceListService+GET.swift */; };
 		844099131F5AA496005BAC61 /* GROTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844099121F5AA496005BAC61 /* GROTPModel.swift */; };
+		844099151F5AA775005BAC61 /* GROTPVerfiy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844099141F5AA775005BAC61 /* GROTPVerfiy.swift */; };
+		844099171F5AA837005BAC61 /* GROTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844099161F5AA837005BAC61 /* GROTP.swift */; };
+		844099191F5AAA4C005BAC61 /* GROTPVerifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844099181F5AAA4C005BAC61 /* GROTPVerifyModel.swift */; };
+		8440991B1F5AB029005BAC61 /* RegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440991A1F5AB029005BAC61 /* RegisterTableViewController.swift */; };
+		8440991D1F5AB218005BAC61 /* GRRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440991C1F5AB218005BAC61 /* GRRegister.swift */; };
+		8440991F1F5ABA9D005BAC61 /* GRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440991E1F5ABA9D005BAC61 /* GRegisterModel.swift */; };
+		844099211F5ABDD8005BAC61 /* ServiceListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844099201F5ABDD8005BAC61 /* ServiceListModel.swift */; };
+		844099231F5ABECB005BAC61 /* ServiceListArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844099221F5ABECB005BAC61 /* ServiceListArray.swift */; };
+		844099251F5ABF27005BAC61 /* AuthorizedServiceListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844099241F5ABF27005BAC61 /* AuthorizedServiceListModel.swift */; };
+		844099271F5ABF5E005BAC61 /* AuthorizedServiceListArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844099261F5ABF5E005BAC61 /* AuthorizedServiceListArray.swift */; };
 		9EC5A4431F1AEB63002747EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A43F1F1AEB63002747EE /* ViewController.swift */; };
 		9EC5A45C1F1AED1B002747EE /* PasswordTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4541F1AED1B002747EE /* PasswordTextViewController.swift */; };
 		9EC5A45D1F1AED1B002747EE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4551F1AED1B002747EE /* ProfileTableViewController.swift */; };
@@ -30,7 +40,7 @@
 		9EC5A46E1F1B0F3D002747EE /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A46C1F1B0F3D002747EE /* PageContentViewController.swift */; };
 		9EC5A46F1F1B0F3D002747EE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A46D1F1B0F3D002747EE /* SecondViewController.swift */; };
 		9EC5A4711F1BEAD9002747EE /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4701F1BEAD9002747EE /* LoginTableViewController.swift */; };
-		9EC5A4731F1C951D002747EE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4721F1C951D002747EE /* RegisterViewController.swift */; };
+		9EC5A4731F1C951D002747EE /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4721F1C951D002747EE /* OTPViewController.swift */; };
 		9EC5A4751F1C9531002747EE /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4741F1C9531002747EE /* VerifyViewController.swift */; };
 		9EC5A4771F1C977C002747EE /* ReferralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A4761F1C977C002747EE /* ReferralViewController.swift */; };
 		9EC5A47B1F1C9F9E002747EE /* GRLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5A47A1F1C9F9E002747EE /* GRLogin.swift */; };
@@ -58,6 +68,16 @@
 		8440990E1F5AA0A7005BAC61 /* ServiceListService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceListService+GET.swift"; sourceTree = "<group>"; };
 		844099101F5AA0DE005BAC61 /* AuthorizedServiceListService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AuthorizedServiceListService+GET.swift"; sourceTree = "<group>"; };
 		844099121F5AA496005BAC61 /* GROTPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GROTPModel.swift; sourceTree = "<group>"; };
+		844099141F5AA775005BAC61 /* GROTPVerfiy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GROTPVerfiy.swift; sourceTree = "<group>"; };
+		844099161F5AA837005BAC61 /* GROTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GROTP.swift; sourceTree = "<group>"; };
+		844099181F5AAA4C005BAC61 /* GROTPVerifyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GROTPVerifyModel.swift; sourceTree = "<group>"; };
+		8440991A1F5AB029005BAC61 /* RegisterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTableViewController.swift; sourceTree = "<group>"; };
+		8440991C1F5AB218005BAC61 /* GRRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRRegister.swift; sourceTree = "<group>"; };
+		8440991E1F5ABA9D005BAC61 /* GRegisterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRegisterModel.swift; sourceTree = "<group>"; };
+		844099201F5ABDD8005BAC61 /* ServiceListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceListModel.swift; sourceTree = "<group>"; };
+		844099221F5ABECB005BAC61 /* ServiceListArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceListArray.swift; sourceTree = "<group>"; };
+		844099241F5ABF27005BAC61 /* AuthorizedServiceListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizedServiceListModel.swift; sourceTree = "<group>"; };
+		844099261F5ABF5E005BAC61 /* AuthorizedServiceListArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizedServiceListArray.swift; sourceTree = "<group>"; };
 		9EC5A43F1F1AEB63002747EE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9EC5A4541F1AED1B002747EE /* PasswordTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextViewController.swift; sourceTree = "<group>"; };
 		9EC5A4551F1AED1B002747EE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +94,7 @@
 		9EC5A46C1F1B0F3D002747EE /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		9EC5A46D1F1B0F3D002747EE /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9EC5A4701F1BEAD9002747EE /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
-		9EC5A4721F1C951D002747EE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9EC5A4721F1C951D002747EE /* OTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		9EC5A4741F1C9531002747EE /* VerifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
 		9EC5A4761F1C977C002747EE /* ReferralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralViewController.swift; sourceTree = "<group>"; };
 		9EC5A47A1F1C9F9E002747EE /* GRLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRLogin.swift; sourceTree = "<group>"; };
@@ -132,9 +152,10 @@
 				9EC5A45B1F1AED1B002747EE /* SideMenuViewController.swift */,
 				9EC5A43F1F1AEB63002747EE /* ViewController.swift */,
 				9EC5A4701F1BEAD9002747EE /* LoginTableViewController.swift */,
-				9EC5A4721F1C951D002747EE /* RegisterViewController.swift */,
+				9EC5A4721F1C951D002747EE /* OTPViewController.swift */,
 				9EC5A4741F1C9531002747EE /* VerifyViewController.swift */,
 				9EC5A4761F1C977C002747EE /* ReferralViewController.swift */,
+				8440991A1F5AB029005BAC61 /* RegisterTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +181,15 @@
 				9EC5A48B1F1DD744002747EE /* GRSucess.swift */,
 				9EC5A48D1F1DDC76002747EE /* GRForgotPassword.swift */,
 				844099121F5AA496005BAC61 /* GROTPModel.swift */,
+				844099141F5AA775005BAC61 /* GROTPVerfiy.swift */,
+				844099161F5AA837005BAC61 /* GROTP.swift */,
+				844099181F5AAA4C005BAC61 /* GROTPVerifyModel.swift */,
+				8440991C1F5AB218005BAC61 /* GRRegister.swift */,
+				8440991E1F5ABA9D005BAC61 /* GRegisterModel.swift */,
+				844099201F5ABDD8005BAC61 /* ServiceListModel.swift */,
+				844099221F5ABECB005BAC61 /* ServiceListArray.swift */,
+				844099241F5ABF27005BAC61 /* AuthorizedServiceListModel.swift */,
+				844099261F5ABF5E005BAC61 /* AuthorizedServiceListArray.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -377,16 +407,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC5A4621F1AED1B002747EE /* SideMenuOptionsTableViewController.swift in Sources */,
+				8440991D1F5AB218005BAC61 /* GRRegister.swift in Sources */,
+				8440991B1F5AB029005BAC61 /* RegisterTableViewController.swift in Sources */,
 				9EC5A4651F1AED3E002747EE /* FABUtils+FloatingActionButton.swift in Sources */,
 				8440990B1F5A9F6C005BAC61 /* RegisterService+POST.swift in Sources */,
+				844099211F5ABDD8005BAC61 /* ServiceListModel.swift in Sources */,
 				9EC5A4431F1AEB63002747EE /* ViewController.swift in Sources */,
 				844099091F5A9E2E005BAC61 /* VerifyOTPService+POST.swift in Sources */,
+				844099251F5ABF27005BAC61 /* AuthorizedServiceListModel.swift in Sources */,
 				9EC5A46F1F1B0F3D002747EE /* SecondViewController.swift in Sources */,
 				9EC5A4771F1C977C002747EE /* ReferralViewController.swift in Sources */,
 				9EC5A46E1F1B0F3D002747EE /* PageContentViewController.swift in Sources */,
 				9EDF281B1F1AE47500BFB1EC /* AppDelegate.swift in Sources */,
 				844099111F5AA0DE005BAC61 /* AuthorizedServiceListService+GET.swift in Sources */,
 				9EC5A4601F1AED1B002747EE /* SideBarHeaderViewController.swift in Sources */,
+				844099191F5AAA4C005BAC61 /* GROTPVerifyModel.swift in Sources */,
+				844099151F5AA775005BAC61 /* GROTPVerfiy.swift in Sources */,
+				844099171F5AA837005BAC61 /* GROTP.swift in Sources */,
 				8440990D1F5A9FC6005BAC61 /* ReferralService+POST.swift in Sources */,
 				844099131F5AA496005BAC61 /* GROTPModel.swift in Sources */,
 				9EC5A4821F1CBC09002747EE /* UserDefaults+Helper.swift in Sources */,
@@ -404,12 +441,15 @@
 				9EC5A4801F1CBB75002747EE /* LoginService+POST.swift in Sources */,
 				844099071F5A9E00005BAC61 /* GenerateOTPService+POST.swift in Sources */,
 				9EC5A4631F1AED1B002747EE /* SideMenuViewController.swift in Sources */,
-				9EC5A4731F1C951D002747EE /* RegisterViewController.swift in Sources */,
+				9EC5A4731F1C951D002747EE /* OTPViewController.swift in Sources */,
 				9EC5A46B1F1AFF83002747EE /* AppConstants.swift in Sources */,
 				9EC5A4671F1AED48002747EE /* SideMenuTableViewCell.swift in Sources */,
+				8440991F1F5ABA9D005BAC61 /* GRegisterModel.swift in Sources */,
 				8440990F1F5AA0A7005BAC61 /* ServiceListService+GET.swift in Sources */,
 				9EC5A4881F1CF452002747EE /* AlertView+Helper.swift in Sources */,
 				9EC5A48E1F1DDC76002747EE /* GRForgotPassword.swift in Sources */,
+				844099271F5ABF5E005BAC61 /* AuthorizedServiceListArray.swift in Sources */,
+				844099231F5ABECB005BAC61 /* ServiceListArray.swift in Sources */,
 				9EC5A45C1F1AED1B002747EE /* PasswordTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

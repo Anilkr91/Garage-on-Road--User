@@ -7,7 +7,6 @@
 //
 
 import Gloss
-
 struct GRLoginModel {
     
     let mobile: String?

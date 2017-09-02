@@ -618,10 +618,10 @@
             </objects>
             <point key="canvasLocation" x="1090" y="638"/>
         </scene>
-        <!--Register View Controller-->
+        <!--View Controller-->
         <scene sceneID="a4I-TP-zgs">
             <objects>
-                <viewController id="H8X-Lk-ei2" customClass="RegisterViewController" customModule="Garage_on_Road__User" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="H8X-Lk-ei2" customClass="OTPViewController" customModule="Garage_on_Road__User" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6IR-nR-c7r"/>
                         <viewControllerLayoutGuide type="bottom" id="stn-u0-hvf"/>
@@ -687,7 +687,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mobileTextfield" destination="zcH-lN-bj2" id="Pht-pv-RUH"/>
+                        <outlet property="mobileTextfield" destination="zcH-lN-bj2" id="9gk-IA-uFH"/>
                         <segue destination="L7n-iU-rL8" kind="show" identifier="showOTPSegue" id="S9b-q6-Npz"/>
                     </connections>
                 </viewController>
@@ -763,6 +763,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="otpTextField" destination="XH6-zQ-yBz" id="GFh-16-H5i"/>
                         <segue destination="FXh-iG-Vqx" kind="show" identifier="showLoginFormSegue" id="Gjc-qX-R5d"/>
                     </connections>
                 </viewController>
@@ -876,10 +877,10 @@
             </objects>
             <point key="canvasLocation" x="3967" y="-616"/>
         </scene>
-        <!--Login Table View Controller-->
+        <!--Register Table View Controller-->
         <scene sceneID="YSo-WV-RFT">
             <objects>
-                <tableViewController id="FXh-iG-Vqx" customClass="LoginTableViewController" customModule="Garage_on_Road__User" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="FXh-iG-Vqx" customClass="RegisterTableViewController" customModule="Garage_on_Road__User" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5WK-ov-RiO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1191,8 +1192,12 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="passwordTextField" destination="c4G-38-sQF" id="Y3D-7B-oM5"/>
-                        <outlet property="phoneTextField" destination="x89-8o-u1A" id="BLn-qn-Cjj"/>
+                        <outlet property="addressTextField" destination="gfE-lX-Nrf" id="Vp7-wV-tmM"/>
+                        <outlet property="confirmpasswordTextField" destination="3Fv-5C-JrS" id="Ftx-PM-eP7"/>
+                        <outlet property="emailTextField" destination="c4G-38-sQF" id="GVE-uO-qS1"/>
+                        <outlet property="nameTextField" destination="x89-8o-u1A" id="USO-sX-bYj"/>
+                        <outlet property="passwordTextField" destination="7YJ-3Q-FlL" id="DjA-dA-eJa"/>
+                        <outlet property="phoneTextField" destination="L8A-I9-KaH" id="6Hl-ug-Wb7"/>
                         <segue destination="jst-1E-ELP" kind="show" identifier="showreferralsegue" id="79n-1x-2qU"/>
                     </connections>
                 </tableViewController>

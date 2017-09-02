@@ -10,15 +10,15 @@ import Alamofire
 import Gloss
 
 class AuthorizedServiceListGetService {
-    static func executeRequest (completionHandler: @escaping ([ClassModel]) -> Void) {
+    static func executeRequest (completionHandler: @escaping ([AuthorizedServiceListModel]) -> Void) {
         
         //let header: HTTPHeaders = ["X_API_KEY" : Constants.API_KEY]
         let URL = Constants.BASE_URL
-        let request = Alamofire.request( URL + "provider/authorised_list", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { response in
+        let request = Alamofire.request( URL + "provider/authorised_list", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
             
             switch response.result {
             case .success(let value) :
-                if let data = ClassModelArray.init(json: value as! JSON)  {
+                if let data = AuthorizedServiceListArray.init(json: value as! JSON)  {
                     completionHandler(data.results)
                 }
                 

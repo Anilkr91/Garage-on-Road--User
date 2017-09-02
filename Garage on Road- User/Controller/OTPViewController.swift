@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  OTPViewController.swift
 //  Garage on Road- User
 //
 //  Created by Anil Kumar on 7/17/17.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class OTPViewController: UIViewController {
     
     @IBOutlet weak var mobileTextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        generateOTP()
     }
     
     override func didReceiveMemoryWarning() {
@@ -23,10 +24,19 @@ class RegisterViewController: UIViewController {
     }
     
     func generateOTP() {
-        
-        let param = GROTPModel(phone: mobileTextfield.text!).toJSON()
+        let param = GROTP(phone: mobileTextfield.text!).toJSON()
         GenerateOTPPostService.userlogin(params: param! as [String : AnyObject]) { (otp) in
             print(otp)
+            self.performSegue(withIdentifier: "VerifyOTPSegue", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "VerifyOTPSegue" {
+            
+            let dvc = segue.destination as! VerifyViewController
+            dvc.mobile = mobileTextfield.text
         }
     }
 }
